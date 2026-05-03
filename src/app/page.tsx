@@ -1,55 +1,31 @@
 export default function Home() {
   return (
     <div className="min-h-screen bg-[#F5E6D3] flex flex-col">
-      
-      {/* Header */}
-      <div className="bg-[#6B4F3B] text-white py-12 flex flex-col items-center">
-        <div className="text-4xl font-bold tracking-wide">
-          Vanillabean
-        </div>
-        <div className="text-lg mt-2 tracking-[0.4em] opacity-90">
-          DASHBOARD
-        </div>
+      <div className="bg-[#6B4F3B] text-white py-14 text-center">
+        <h1 className="text-4xl font-bold">Vanillabean</h1>
+        <p className="tracking-[0.4em] mt-2">DASHBOARD</p>
       </div>
 
-      {/* Form */}
       <div className="flex flex-1 items-center justify-center px-6">
-        <div className="bg-white p-8 rounded-2xl shadow-lg w-full max-w-md">
+        <div className="bg-white rounded-3xl shadow-xl p-8 w-full max-w-md text-center">
+          <h2 className="text-2xl font-bold text-[#6B4F3B] mb-3">
+            เข้าสู่ระบบ
+          </h2>
 
-          <div className="mb-5">
-            <label className="block text-gray-600 mb-1">อีเมล</label>
-            <input
-              type="email"
-              className="w-full border-b-2 border-gray-300 outline-none py-2 text-lg focus:border-[#6B4F3B]"
-              placeholder="example@email.com"
-            />
-          </div>
+          <p className="text-gray-600 mb-8">
+            เชื่อมต่อบัญชี Loyverse เพื่อดูยอดขาย ภาษี และข้อมูลสาขา
+          </p>
 
-          <div className="mb-8">
-            <label className="block text-gray-600 mb-1">รหัสผ่าน</label>
-            <input
-              type="password"
-              className="w-full border-b-2 border-gray-300 outline-none py-2 text-lg focus:border-[#6B4F3B]"
-              placeholder="••••••••"
-            />
-          </div>
-
-          {/* 🔥 ปุ่ม OAuth */}
           <a
             href="/api/auth/loyverse"
-            className="block text-center w-full bg-[#6B4F3B] text-white py-3 rounded-xl text-lg hover:bg-[#4B3621] transition"
+            className="block w-full bg-[#6B4F3B] text-white py-4 rounded-2xl text-lg font-bold hover:bg-[#4B3621] transition"
           >
-            เข้าสู่ระบบด้วย Loyverse
+            เชื่อมต่อ Loyverse
           </a>
 
-          <div className="text-center mt-6 text-gray-600">
-            ลืมรหัสผ่าน?
-          </div>
-
-          <div className="text-center mt-4 text-gray-600">
-            พึ่งรู้จัก Vanillabean?
-          </div>
-
+          <p className="text-sm text-gray-500 mt-6">
+            สำหรับเจ้าของร้านและแฟรนไชส์ Vanillabean
+          </p>
         </div>
       </div>
     </div>
